@@ -1,0 +1,75 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+body {
+  margin: 0;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: peachpuff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.prompt {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity ease-in 1s;
+  display: flex;
+  align-items: center;
+}
+
+.prompt.show {
+  opacity: 1;
+}
+
+.board {
+  width: 90%;
+  height: 90%;
+  max-width: 500px;
+  max-height: 500px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.row {
+  flex: 2;
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
+.confetti {
+  position: absolute;
+  inset: 0;
+  background-image: url(https://cutewallpaper.org/24/confetti-transparent-gif/confetti-df799-in-9fa5b-gif-beb54-format-aebe2-55-9c0c2-animated-bec03-images-f0c87-for-8829d-free.gif);
+  pointer-events: none;
+}
+
+.reset-btn {
+  display: inline-block;
+  margin-left: 12px;
+  background-color: orangered;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+}
